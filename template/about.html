@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Conttact -->
+<section class="section-hero overlay inner-page bg-image" style="background-image: url('{% static "images/hero_1.jpg" %}');" id="contact-section">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h1 class="text-white font-weight-bold">About</h1>
+            <div class="custom-breadcrumbs">
+              <a href="{% url 'jobapp:home' %}">Home</a> <span class="mx-2 slash">/</span>
+              <span class="text-white"><strong>About</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+<section>
+    <div class="contact-details">
+        <div style="width: 50%; margin: 5rem auto 5rem auto;">
+            <div class="about-section">
+                <h2 style="font-size: 2rem;">Welcome to our Job Portal</h2>
+                <p>Our mission is to simplify the job search process for both employers and job seekers by providing a platform that is easy to use and understand. We strive to connect job seekers with the best opportunities available.</p>
+                <p>We believe that finding the right job should be a smooth and stress-free process. That's why we've designed our portal to make job search easier and more effective. We work hard to ensure that every job listing on our site is accurate, up-to-date, and relevant, so you can be confident that you are applying for the right job.</p>
+                <p>Our portal is also designed to help employers find the best candidates for their open positions. We offer a range of tools and features to help employers create and post job listings, manage applications, and track the progress of their hiring process.</p>
+                <p>We are committed to providing a safe and secure platform for both employers and job seekers. Our team works diligently to prevent fraudulent job listings and ensure that all employers and job seekers are who they say they are.</p>
+                <p>Thank you for choosing our job portal for your job search needs. We look forward to helping you find your dream job or the perfect candidate for your company.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
